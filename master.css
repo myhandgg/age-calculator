@@ -147,19 +147,23 @@ hr {
 
 /* End footer */
 
-@media (max-width:425px){
-    .parent{
+@media (max-width:760px) {
+    .parent {
         width: fit-content;
-        padding: 20px;   
-    }
-    .parent header{
-        margin-bottom: 50px;
     }
     .parent header input {
-        width:100px;
+        width: 100px;
         font-size: 20px;
-        margin-right: 20px;
+        margin-right: 20px
     }
+    .parent footer .years,
+    .parent footer .monthes,
+    .parent footer .days {
+        font-size: 66px;
+    }
+}
+
+@media (max-width:550px) {
     .parent .hr .ball{
         left: 50%;
         top: 50%;
@@ -181,3 +185,17 @@ hr {
     }
 }
 
+@media (max-width:425px){
+    .parent{
+        padding: 20px;   
+    }
+    .parent header{
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width:410px) {
+    .parent {
+        transform: translate(-50%,-50%) scale(.8);
+    }
+}
